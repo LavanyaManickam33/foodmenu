@@ -1,0 +1,68 @@
+print("WELCOME TO PIZZA PLANET!!")
+def food_menu():
+    print("here's our menu!!")
+    print("1.hawaiian         $7")
+    print("2.champagne ham    $7")
+    print("3.the deluxe       $13")
+    print("4.italiano         $7")
+    print("5.bacon & mushroom $7")
+    print("6.americano        $13")
+    print("7.mr.wedge         $13")
+    print("8.bbq meat lovers  $13")
+    print("enter done to finish your orders")
+    print("exit to cancel your order")
+food_menu()
+def selection():
+    if select == '1':
+        print("you have selected hawaiian! that would be $7")
+        a=int(input("enter how many 'hawaiian' that you want:"))
+        total = a*7
+    elif select == '2':
+        print("you have selected champagne ham! that would be $7")
+        a=int(input("enter how many 'champagne ham' that you want:"))
+        total = a * 7
+    elif select == '3':
+        print("you have selected the deluxe! that would be $7")
+        a=int(input("enter how many 'the deluxe' that you want:"))
+        total = a * 7
+    elif select == '4':
+        print("you have selected italiano! that would be $7")
+        a=int(input("enter how many 'italiano' that you want:"))
+        total = a * 7
+    elif select == '5':
+        print("you have selected bacon & mushroom! that would be $7")
+        a=int(input("enter how many bacon & mushroom that you want:"))
+        total = a * 7
+    elif select == '6':
+        print("you have selected the americano! that would be $13")
+        a=int(input("enter how many 'americano' that you want:"))
+        total = a * 13
+    elif select == '7':
+        print("you have selected mr.wedge! that would be $13")
+        a=int(input("enter how many 'mr.wedge' that you want:"))
+        total = a * 13
+    elif select == '8':
+        print("you have selected bbq meat lovers! that would be $13")
+        a=int(input("enter how many 'bbq meat lovers' that you want:"))
+        total = a * 13
+    return total
+total=0
+for i in range(50):
+    select=input("please enter the items that you want :")
+    if select == 'done':
+        print("total bill $", total)
+        print("your order had finished!thank you!!")
+        break
+    elif select == 'exit':
+        print("your order got cancelled!!")
+        break
+    else:
+        total=total+selection()
+
+
+
+
+
+
+
+
